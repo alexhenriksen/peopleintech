@@ -110,7 +110,7 @@ export default async function Home() {
               {
                 icon: <Users className="w-6 h-6" />,
                 title: "Extensive Talent Pool",
-                description: "Access to 5,000+ pre-vetted tech professionals",
+                description: "Access to 500+ pre-vetted tech professionals",
               },
             ].map((feature, index) => (
               <div
@@ -154,7 +154,7 @@ export default async function Home() {
               </ul>
               <Link href="/dashboard">
                 <Button className="bg-blue-600 hover:bg-blue-700">
-                  Access Dashboard
+                  Get Started
                   <ArrowUpRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
