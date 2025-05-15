@@ -17,6 +17,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import previewImage from "@/assets/Dashboard.png";
 
 export default async function Home() {
   const supabase = await createClient();
@@ -160,13 +161,18 @@ export default async function Home() {
               </Link>
             </div>
             <div className="bg-gray-100 rounded-xl p-4 shadow-sm">
-              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-gray-500 text-center px-8">
-                    Dashboard preview image
-                  </p>
-                </div>
+              <div className="aspect-video bg-white rounded-lg overflow-hidden relative">
+                <img
+                  src={previewImage.src}
+                  alt="Dashboard preview"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <p className="text-gray-500 text-sm mt-3 text-center italic">
+                This is not an identical representation of the final dashboard
+                and its functionality, only an insight into what it may look
+                like!
+              </p>
             </div>
           </div>
         </div>
