@@ -123,6 +123,13 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="text-center mb-6 bg-amber-50 border border-amber-200 rounded-md p-3 text-amber-700 text-sm">
+          <p>
+            Please note: The linked pages are currently a work in progress and
+            will be available soon.
+          </p>
+        </div>
+
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
           <div className="text-gray-600 mb-4 md:mb-0">
             © {currentYear} People In Tech. All rights reserved.
