@@ -162,9 +162,11 @@ export default async function Home() {
             </div>
             <div className="bg-gray-100 rounded-xl p-4 shadow-sm">
               <div className="aspect-video bg-white rounded-lg overflow-hidden relative">
-                <img
-                  src={previewImage.src}
+                <Image
+                  src="/dashboard-preview.png"
                   alt="Dashboard preview"
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover"
                 />
               </div>

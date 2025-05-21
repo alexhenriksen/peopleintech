@@ -2,7 +2,8 @@
 
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "storage.googleapis.com"],
+    unoptimized: process.env.NODE_ENV === "production",
   },
 };
 

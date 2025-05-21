@@ -3,7 +3,7 @@ import { ArrowUpRight, Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden flex bg-[url('https://storage.googleapis.com/tempo-public-images/github%7C55692984-1747339653111-HeroPITpng')] flex-col-reverse">
+    <div className="relative overflow-hidden flex bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex-col-reverse">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 opacity-70" />
       <div className="relative pt-24 pb-32 sm:pt-32 sm:pb-40 flex-col-reverse">

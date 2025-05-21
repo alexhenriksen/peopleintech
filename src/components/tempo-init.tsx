@@ -5,7 +5,11 @@ import { useEffect } from "react";
 
 export function TempoInit() {
   useEffect(() => {
-    if (process.env.NEXT_PUBLIC_TEMPO) {
+    // Only initialize in development mode
+    if (
+      process.env.NEXT_PUBLIC_TEMPO &&
+      process.env.NODE_ENV === "development"
+    ) {
       TempoDevtools.init();
     }
   }, []);
